@@ -5,6 +5,8 @@ function Calculator() {
   const [displayValue, setDisplayValue] = useState('0');
   const [currentValue, setCurrentValue] = useState('');
   const [operator, setOperator] = useState('');
+  const [calculations, setCalculations] = useState([]);
+
 
   const handleNumberClick = (number) => {
     setCurrentValue(currentValue + number);
@@ -43,6 +45,7 @@ function Calculator() {
       setDisplayValue(result.toString());
       setCurrentValue(result.toString());
       setOperator('');
+      setCalculations([`${displayValue} = ${result}`, ...calculations.slice(0, 49)]);
     }catch (error) {
       console.error(error);
       setDisplayValue('Error');
@@ -78,9 +81,13 @@ function Calculator() {
           <button className='operator' onClick={handleEqualsClick}>=</button>
           <button className='operator' onClick={() => handleOperatorClick('+')}>+</button>
         </div>
-        {/* <div className='row'>
-          <button className='operator' onClick={handleEqualsClick}>Scientific</button>
-        </div> */}
+        <div>
+          <ul>
+            {calculations.map((calculation, index) => (
+              <li key={index}>{calculation}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
