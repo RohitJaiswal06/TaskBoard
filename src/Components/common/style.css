@@ -1,0 +1,84 @@
+
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #1c437e;
+  
+}
+h2{
+  font-size:  40px;
+}
+.auth-form-container, .login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+
+}
+.space{
+   margin-bottom:25px;
+}
+
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 2rem 0;
+}
+
+input {
+  box-sizing: border-box;
+   padding:5px;
+  margin: 0.25rem ;
+  font-size: 15px;
+  min-width: 30vw;
+  text-align: left;
+  color: white;
+  padding-left:15px ;
+  padding-bottom: 10px;
+  /* border: 1px solid white; */
+  /* border-radius: 10px; */
+  background-color:transparent;
+  outline :none;
+  border: none;
+}
+
+::placeholder{
+    color: rgb(234, 231, 231);
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 80px;
+  color: #1c437e;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  margin : 60px auto 0px auto
+ 
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  /* text-decoration: underline; */
+}
+
+::placeholder{
+  color: rgb(232, 231, 231);
+}
