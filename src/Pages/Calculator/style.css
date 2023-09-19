@@ -7,7 +7,6 @@
     width: 500px;
     min-height: 410px;
     background-color: #1c437e;
-    border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   }
@@ -22,10 +21,11 @@
     justify-content: flex-end;
     padding: 0 10px;
     font-size: 40px;
+    color: black;
   }
   
   .text{
-    color: black;
+    color: white;
     font-size: 50px;
   }
   
