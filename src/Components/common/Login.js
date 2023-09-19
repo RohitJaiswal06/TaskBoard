@@ -13,7 +13,7 @@ const Login = (props) => {
         const user = JSON.parse(localStorage.getItem('user'));
         if(input.email===user.email && input.password===user.password){
             localStorage.setItem('loggedin', true);
-            navigate('/taskboard');
+            navigate('/homepage');
         }
         else{
             alert("Wrong Credentials. Please try again")

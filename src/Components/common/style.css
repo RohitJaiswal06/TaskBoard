@@ -82,3 +82,48 @@ button {
 ::placeholder{
   color: rgb(232, 231, 231);
 }
+
+.container{
+  display: flex;
+}
+
+.links{
+  color: white;
+  text-decoration: none;
+}
+
+#container-child1{
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+
+#container-child2{
+  position: absolute;
+  left: 45%;
+  top: 40%;
+}
+
+#container-child3{
+  position: absolute;
+  left: 80%;
+  top: 40%;
+}
+
+.links:hover{
+  color: grey;
+}
+
+#heading{
+  position: absolute;
+  top: 10%;
+  left: 43vw;
+  color: yellow;
+  font-size: 50px;
+}
+
+@media (max-width:600px) {
+  #heading{
+    left: 38vw;
+  }
+}
