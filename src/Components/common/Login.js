@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './style.css'
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 const Login = (props) => {
     const navigate = useNavigate();
     const [input,setInput] = useState({
@@ -21,7 +22,8 @@ const Login = (props) => {
     }
 
     return (
-        <div className="auth-form-container ">
+        <div className="container-input">
+        <div className="auth-form-container container-login">
             <h2>Log in!</h2>
             <form className="login-form" onSubmit={handleLogin}>
                 <fieldset class ="space">
@@ -32,11 +34,13 @@ const Login = (props) => {
                 <legend>Password</legend>
                 <input value={input.password} onChange={(e) => setInput({...input,[e.target.name]:e.target.value})} type="password" placeholder="Enter your password" id="password" name="password" />
                 </fieldset>
-   
-                <button type="submit">Log In</button>
-                
+                <Link to={"/"}>
+                    <p className="register">Register</p>
+                </Link>
+                <button className="lr-btn" type="submit">Log In</button>
             </form>
             
+        </div>
         </div>
     )
 }

@@ -24,7 +24,7 @@
 .todo_text, .todo_text_checked {
     color: rgb(0, 0, 0);
     flex: 1;
-    /* border-bottom: 1px solid #484040; */
+    
     padding-bottom: 10px;
     padding-left: 8px;
 }

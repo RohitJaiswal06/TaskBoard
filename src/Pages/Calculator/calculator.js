@@ -53,6 +53,7 @@ function Calculator() {
   };
 
   return (
+    <div className='container-input'>
     <div className="calculator">
       <h1 className='text'>Calculator!</h1>
       <div className="display">{displayValue}</div>
@@ -82,6 +83,7 @@ function Calculator() {
           <button className='operator' onClick={() => handleOperatorClick('+')}>+</button>
         </div>
       </div>
+    </div>
     </div>
   );
 }

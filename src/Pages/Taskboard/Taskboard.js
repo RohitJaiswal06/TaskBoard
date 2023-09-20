@@ -71,13 +71,7 @@ const App = () => {
     <div className="container">
         <Header></Header>
         <div className="App_todo ">
-            {/* <form className="App_input_wrapper" onSubmit={addTodo} >
-                <input type={"text"} className="App_input" value={todo} onChange={(e) => setTodo(e.target.value)} />
-                <div className="App_input_button" onClick={addTodo} >
-                    <BsAlignMiddle size={24} />
-                </div>
-            </form> */}
-
+            
             <div className="App_todo_list layout">
            <div className="heading">My tasks!</div>
 
@@ -99,6 +93,9 @@ const App = () => {
                     )
                 }
             </div>
+        </div>
+        <div>
+            <button className="button_main">+</button>
         </div>
     </div>
     

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Homepage = () => {
   return (
-    <div className='container'>
+    <div className='container-input'>
         <h1 id='heading'>Welcome</h1>
       <div id='container-child1' className='container-chid'>
         <Link to={'/taskboard'}>

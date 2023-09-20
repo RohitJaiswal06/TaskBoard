@@ -1,5 +1,5 @@
 
-.App {
+.container-input {
   text-align: center;
   display: flex;
   min-height: 100vh;
@@ -46,8 +46,6 @@ input {
   color: white;
   padding-left:15px ;
   padding-bottom: 10px;
-  /* border: 1px solid white; */
-  /* border-radius: 10px; */
   background-color:transparent;
   outline :none;
   border: none;
@@ -57,7 +55,7 @@ input {
     color: rgb(234, 231, 231);
 }
 
-button {
+.lr-btn {
   border: none;
   background-color: white;
   padding: 20px;
@@ -66,11 +64,11 @@ button {
   cursor: pointer;
   margin-top: 80px;
   color: #1c437e;
-  width: 200px;
+  width: 150px;
   display: flex;
   justify-content: center;
-  margin : 60px auto 0px auto
- 
+  margin : 60px auto 0px auto;
+  height: 4%;
 }
 
 .link-btn {
@@ -80,7 +78,7 @@ button {
 }
 
 ::placeholder{
-  color: rgb(232, 231, 231);
+  color: rgb(255, 255, 255);
 }
 
 .container{
@@ -126,4 +124,10 @@ button {
   #heading{
     left: 38vw;
   }
+}
+
+.register{
+  display: flex;
+  justify-content: flex-end;
+  color: white;
 }
