@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import * as math from 'mathjs';
 import './style.css'
+import Header from '../../Components/Taskboard/Header';
 function Calculator() {
   const [displayValue, setDisplayValue] = useState('0');
   const [currentValue, setCurrentValue] = useState('');
@@ -54,6 +55,7 @@ function Calculator() {
 
   return (
     <div className='container-input'>
+      <Header/>
     <div className="calculator">
       <h1 className='text'>Calculator!</h1>
       <div className="display">{displayValue}</div>

@@ -52,14 +52,15 @@
 }
 
 .App_input_button{
+  
   width: 3rem;
-  height: 100%;
   background-color: #2d2a8d;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   cursor: pointer;
+  
 }
 
 .App_todo_list{

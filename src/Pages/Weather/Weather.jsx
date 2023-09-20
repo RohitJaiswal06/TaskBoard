@@ -4,6 +4,7 @@ import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFrown } from '@fortawesome/free-solid-svg-icons';
 import './style.css'
+import Header from '../../Components/Taskboard/Header';
 
 function Weather() {
   const [query, setQuery] = useState();
@@ -74,6 +75,8 @@ function Weather() {
   };
   
   return (
+    <div>
+      <Header/>
     <div className='component'>
       <h1 className="app-name">
         Weather App<span>🌤</span>
@@ -135,6 +138,7 @@ function Weather() {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 }

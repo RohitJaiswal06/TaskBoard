@@ -77,10 +77,10 @@ const App = () => {
 
             <form className="App_input_wrapper" onSubmit={addTodo} >
                 <input type={"text"} className="App_input" value={todo} onChange={(e) => setTodo(e.target.value)} />
-                <div className="App_input_button" onClick={addTodo} >
-                    <BsAlignMiddle size={24} />
-                </div>
+                    {/* <BsAlignMiddle size={24} /> */}
+                <button className="App_input_button" onClick={addTodo}>+</button>
             </form>
+            
                 {
                     allTodos.map(todo => (
                         <ListItem key={todo.id} deleteTodo={() => deleteTodo(todo.id)} text={todo.text} isChecked={todo.isChecked} toggleChecked={() => toggleChecked(todo.id)} />
